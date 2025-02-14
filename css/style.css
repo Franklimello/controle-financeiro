@@ -43,15 +43,22 @@ form input, form select, form button {
 #adc {
     background-color: rgb(90, 180, 90);
     border: none;
+    transition: background-color 0.3s, transform 0.3s;
     
 }
+
+#adc:hover {
+    background-color:rgb(58, 122, 58) ;
+    transform: scale(1.01)
+}
+
 
 @media (max-width: 768px) {
     body {
         padding: 10px;
     }
 
-    #descricao, #valor {
+    #descricao, #valor,#tipo {
         width: 88vw;
     }
 
