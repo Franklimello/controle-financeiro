@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.receita {
+    color: green;
+}
+
+.despesa {
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos do formulário em coluna */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    width: 100%; /* Garante que os campos ocupem 100% da largura */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#adc {
+    background-color: rgb(90, 180, 90);
+    border: none;
+    
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #descricao, #valor {
+        width: 88vw;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    table th, table td {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
